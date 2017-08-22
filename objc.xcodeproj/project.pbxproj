@@ -151,6 +151,10 @@
 		87BB4EA70EC39854005D08E1 /* objc-probes.d in Sources */ = {isa = PBXBuildFile; fileRef = 87BB4E900EC39633005D08E1 /* objc-probes.d */; };
 		9672F7EE14D5F488007CEC96 /* NSObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9672F7ED14D5F488007CEC96 /* NSObject.mm */; };
 		9672F7EF14D5F488007CEC96 /* NSObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9672F7ED14D5F488007CEC96 /* NSObject.mm */; };
+		D2427D1D1F4595C20076557B /* MyString.m in Sources */ = {isa = PBXBuildFile; fileRef = D2427D1C1F4595C20076557B /* MyString.m */; };
+		D2427D201F4596A40076557B /* TestRun.m in Sources */ = {isa = PBXBuildFile; fileRef = D2427D1F1F4596A40076557B /* TestRun.m */; };
+		D2DC86781F4BEE5F00CDEBBE /* TestLock.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC86771F4BEE5F00CDEBBE /* TestLock.m */; };
+		D2DC867B1F4BEE7E00CDEBBE /* TestAutoRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC867A1F4BEE7E00CDEBBE /* TestAutoRelease.m */; };
 		E8923DA1116AB2820071B552 /* a1a2-blocktramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = E8923D9C116AB2820071B552 /* a1a2-blocktramps-i386.s */; };
 		E8923DA2116AB2820071B552 /* a1a2-blocktramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = E8923D9D116AB2820071B552 /* a1a2-blocktramps-x86_64.s */; };
 		E8923DA3116AB2820071B552 /* a2a3-blocktramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = E8923D9E116AB2820071B552 /* a2a3-blocktramps-i386.s */; };
@@ -313,7 +317,15 @@
 		83EB007A121C9EC200B92C16 /* objc-sel-table.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-sel-table.s"; path = "runtime/objc-sel-table.s"; sourceTree = "<group>"; };
 		87BB4E900EC39633005D08E1 /* objc-probes.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; name = "objc-probes.d"; path = "runtime/objc-probes.d"; sourceTree = "<group>"; };
 		9672F7ED14D5F488007CEC96 /* NSObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NSObject.mm; path = runtime/NSObject.mm; sourceTree = "<group>"; };
+		D2427D1B1F4595C20076557B /* MyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyString.h; sourceTree = "<group>"; };
+		D2427D1C1F4595C20076557B /* MyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyString.m; sourceTree = "<group>"; };
+		D2427D1E1F4596A40076557B /* TestRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRun.h; sourceTree = "<group>"; };
+		D2427D1F1F4596A40076557B /* TestRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRun.m; sourceTree = "<group>"; };
 		D2AAC0630554660B00DB518D /* libobjc.A.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libobjc.A.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DC86761F4BEE5F00CDEBBE /* TestLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLock.h; sourceTree = "<group>"; };
+		D2DC86771F4BEE5F00CDEBBE /* TestLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLock.m; sourceTree = "<group>"; };
+		D2DC86791F4BEE7E00CDEBBE /* TestAutoRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAutoRelease.h; sourceTree = "<group>"; };
+		D2DC867A1F4BEE7E00CDEBBE /* TestAutoRelease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAutoRelease.m; sourceTree = "<group>"; };
 		E8923D9C116AB2820071B552 /* a1a2-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "a1a2-blocktramps-i386.s"; path = "runtime/a1a2-blocktramps-i386.s"; sourceTree = "<group>"; };
 		E8923D9D116AB2820071B552 /* a1a2-blocktramps-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "a1a2-blocktramps-x86_64.s"; path = "runtime/a1a2-blocktramps-x86_64.s"; sourceTree = "<group>"; };
 		E8923D9E116AB2820071B552 /* a2a3-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "a2a3-blocktramps-i386.s"; path = "runtime/a2a3-blocktramps-i386.s"; sourceTree = "<group>"; };
@@ -350,6 +362,7 @@
 		08FB7794FE84155DC02AAC07 /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				D2427D1A1F45959F0076557B /* MyCode */,
 				513A033F19B4B13000448729 /* include */,
 				838485C60D6D687700CEA253 /* Public Headers */,
 				838485C70D6D688200CEA253 /* Private Headers */,
@@ -652,6 +665,21 @@
 			name = "Project Headers";
 			sourceTree = "<group>";
 		};
+		D2427D1A1F45959F0076557B /* MyCode */ = {
+			isa = PBXGroup;
+			children = (
+				D2427D1B1F4595C20076557B /* MyString.h */,
+				D2427D1C1F4595C20076557B /* MyString.m */,
+				D2427D1E1F4596A40076557B /* TestRun.h */,
+				D2427D1F1F4596A40076557B /* TestRun.m */,
+				D2DC86761F4BEE5F00CDEBBE /* TestLock.h */,
+				D2DC86771F4BEE5F00CDEBBE /* TestLock.m */,
+				D2DC86791F4BEE7E00CDEBBE /* TestAutoRelease.h */,
+				D2DC867A1F4BEE7E00CDEBBE /* TestAutoRelease.m */,
+			);
+			name = MyCode;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -875,6 +903,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2427D201F4596A40076557B /* TestRun.m in Sources */,
+				D2DC867B1F4BEE7E00CDEBBE /* TestAutoRelease.m in Sources */,
+				D2427D1D1F4595C20076557B /* MyString.m in Sources */,
+				D2DC86781F4BEE5F00CDEBBE /* TestLock.m in Sources */,
 				305B27561C7D9E96005AC125 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
